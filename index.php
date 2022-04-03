@@ -95,9 +95,7 @@ $show_complete_tasks = 1;
                         <td class="task__date"></td>
                     </tr>
                     <tr class="table.tasks">
-                      <?php
-$show_complete_tasks = (1 == 0);
-?>  
+                     <?php $show_complete_tasks= (1 == 0); ?>
 </tr>
                 </table>
             </main>
