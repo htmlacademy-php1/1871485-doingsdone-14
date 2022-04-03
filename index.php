@@ -73,7 +73,6 @@ $show_complete_tasks = rand(0, 1);
                     <label class="checkbox" checked>
                         <?php
 $show_complete_tasks = 1;
-<input type="checkbox" checked>
 ?>
                         <input class="checkbox__input visually-hidden show_completed" type="checkbox">
                         <span class="checkbox__text">Показывать выполненные</span>
@@ -95,7 +94,11 @@ $show_complete_tasks = 1;
 
                         <td class="task__date"></td>
                     </tr>
-                    <input type="checkbox" <?php checked($show_complete_tasks ='0'); ?> >
+                    <tr class="table.tasks">
+                      <?php
+$show_complete_tasks = (1 == 0);
+?>  
+</tr>
                 </table>
             </main>
         </div>
