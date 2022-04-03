@@ -71,7 +71,7 @@ $show_complete_tasks = rand(0, 1);
                     </nav>
 
                     <label class="checkbox">
-                        <input type="checkbox" checked>
+                        <input type="checkbox" <?php checked( $show_complete_tasks['1'] ); ?> >
                         <input class="checkbox__input visually-hidden show_completed" type="checkbox">
                         <span class="checkbox__text">Показывать выполненные</span>
                     </label>
