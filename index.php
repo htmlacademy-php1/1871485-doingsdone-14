@@ -70,9 +70,8 @@ $show_complete_tasks = rand(0, 1);
                         <a href="/" class="tasks-switch__item">Просроченные</a>
                     </nav>
 
-                    <label class="checkbox">
-                        <!--добавить сюда атрибут "checked", если переменная $show_complete_tasks равна единице-->
-                        <input class="checkbox__input visually-hidden show_completed" type="checkbox">
+                    <label class="checkbox" checked>
+                        <input class="checkbox__input visually-hidden show_completed" type="checkbox" <?php if ($show_complete_tasks) {1} echo "checked>";?>>
                         <span class="checkbox__text">Показывать выполненные</span>
                     </label>
                 </div>
@@ -92,7 +91,9 @@ $show_complete_tasks = rand(0, 1);
 
                         <td class="task__date"></td>
                     </tr>
-                    <!--показывать следующий тег <tr/>, если переменная $show_complete_tasks равна единице-->
+                    <tr class="table.tasks">
+                     <?php $show_complete_tasks= (1 == 0); ?>
+</tr>
                 </table>
             </main>
         </div>
